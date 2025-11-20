@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro de Denuncias 24/7 - Alerta Trata y Tráfico</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="css/Denuncias.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i class="bi bi-shield-exclamation me-2"></i>
+                <span>ALERTA - Centro de Denuncias</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="denuncias.html">Denuncias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Prevencion.html">Capacitacion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold mb-4">Centro de Denuncias 24/7</h1>
+                    <p class="lead mb-4">Tu denuncia puede salvar vidas. Reporta de forma segura, anónima y confidencial cualquier caso de trata y tráfico de personas.</p>
+                    <div class="d-flex flex-wrap justify-content-center gap-3">
+                        <a href="#formulario" class="btn btn-denuncia btn-lg">
+                            <i class="bi bi-exclamation-triangle-fill me-2"></i>Denunciar Ahora
+                        </a>
+                        <a href="tel:8001234" class="btn btn-outline-light btn-lg">
+                            <i class="bi bi-telephone-fill me-2"></i>Llamar Emergencia
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <a href="tel:8001234" class="text-decoration-none">
+                        <div class="emergency-contact">
+                            <i class="bi bi-telephone-fill display-6 mb-3"></i>
+                            <h4>Línea Nacional</h4>
+                            <h3>800-1234</h3>
+                            <p class="mb-0">Gratuito las 24 horas</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a href="https://wa.me/591789253782" target="_blank" class="text-decoration-none">
+                        <div class="emergency-contact">
+                            <i class="bi bi-whatsapp display-6 mb-3"></i>
+                            <h4>WhatsApp</h4>
+                            <h3>+591 789-ALERTA</h3>
+                            <p class="mb-0">Chat seguro y confidencial</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a href="#chat" class="text-decoration-none">
+                        <div class="emergency-contact">
+                            <i class="bi bi-chat-dots-fill display-6 mb-3"></i>
+                            <h4>Chat Online</h4>
+                            <h3>24/7 Disponible</h3>
+                            <p class="mb-0">Asistencia inmediata</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="fw-bold">¿Por qué denunciar con nosotros?</h2>
+                    <p class="lead">Ofrecemos el sistema más seguro y confidencial para reportar casos de trata y tráfico</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card feature-card h-100">
+                        <div class="card-body text-center p-4">
+                            <i class="bi bi-shield-check feature-icon"></i>
+                            <h4 class="card-title">100% Anónimo</h4>
+                            <p class="card-text">Tu identidad está protegida. No necesitas proporcionar datos personales para realizar una denuncia.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card feature-card h-100">
+                        <div class="card-body text-center p-4">
+                            <i class="bi bi-clock-history feature-icon"></i>
+                            <h4 class="card-title">Respuesta Inmediata</h4>
+                            <p class="card-text">Nuestro equipo responde en menos de 10 minutos las 24 horas del día, los 7 días de la semana.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card feature-card h-100">
+                        <div class="card-body text-center p-4">
+                            <i class="bi bi-geo-alt feature-icon"></i>
+                            <h4 class="card-title">Seguimiento GPS</h4>
+                            <p class="card-text">Si lo autorizas, podemos geolocalizar tu denuncia para una respuesta más efectiva.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="fw-bold">Impacto de las Denuncias</h2>
+                    <p class="lead">Cada reporte contribuye a combatir este delito</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="stats-card">
+                        <div class="stats-number">1,248</div>
+                        <p class="mb-0">Denuncias recibidas</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="stats-card">
+                        <div class="stats-number">892</div>
+                        <p class="mb-0">Víctimas rescatadas</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="stats-card">
+                        <div class="stats-number">67</div>
+                        <p class="mb-0">Redes desarticuladas</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="stats-card">
+                        <div class="stats-number">94%</div>
+                        <p class="mb-0">Tasa de efectividad</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección del formulario con asides al lado -->
+    <section id="formulario" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <!-- Columna del formulario -->
+                <div class="col-lg-8">
+                    <div class="form-section">
+                        <h2 class="text-center mb-4 fw-bold">Formulario de Denuncia Segura</h2>
+                        <div class="step-indicator">
+                            <div class="step">
+                                <div class="step-circle">1</div>
+                                <span>Información</span>
+                            </div>
+                            <div class="step">
+                                <div class="step-circle">2</div>
+                                <span>Ubicación</span>
+                            </div>
+                            <div class="step">
+                                <div class="step-circle">3</div>
+                                <span>Detalles</span>
+                            </div>
+                            <div class="step">
+                                <div class="step-circle">4</div>
+                                <span>Confirmación</span>
+                            </div>
+                        </div>
+                        <div class="loading-bar mb-4"></div>
+                        <form action="https://formsubmit.co/tu-email@ejemplo.com" method="POST">
+                            <input type="text" name="_honey" style="display:none">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_next" value="https://tudominio.com/gracias.html">
+                            
+                            <div class="mb-4">
+                                <h4 class="mb-3">Tipo de Situación</h4>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <div class="card denuncia-card h-100">
+                                            <div class="card-body">
+                                                <h5 class="card-title"><i class="bi bi-person-badge me-2"></i>Explotación Laboral</h5>
+                                                <p class="card-text">Trabajo forzado, servidumbre, condiciones inhumanas.</p>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="tipoSituacion" id="trabajoForzado" value="Explotación Laboral" required>
+                                                    <label class="form-check-label" for="trabajoForzado">
+                                                        Seleccionar
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div class="card denuncia-card h-100">
+                                            <div class="card-body">
+                                                <h5 class="card-title"><i class="bi bi-heartbreak me-2"></i>Explotación Sexual</h5>
+                                                <p class="card-text">Prostitución forzada, pornografía, turismo sexual.</p>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="tipoSituacion" id="explotacionSexual" value="Explotación Sexual">
+                                                    <label class="form-check-label" for="explotacionSexual">
+                                                        Seleccionar
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div class="card denuncia-card h-100">
+                                            <div class="card-body">
+                                                <h5 class="card-title"><i class="bi bi-person-plus me-2"></i>Tráfico de Personas</h5>
+                                                <p class="card-text">Transporte ilegal, migración forzada, secuestro.</p>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="tipoSituacion" id="traficoPersonas" value="Tráfico de Personas">
+                                                    <label class="form-check-label" for="traficoPersonas">
+                                                        Seleccionar
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div class="card denuncia-card h-100">
+                                            <div class="card-body">
+                                                <h5 class="card-title"><i class="bi bi-shield-exclamation me-2"></i>Otro Caso</h5>
+                                                <p class="card-text">Otras formas de trata y explotación no listadas.</p>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="tipoSituacion" id="otroCaso" value="Otro Caso">
+                                                    <label class="form-check-label" for="otroCaso">
+                                                        Seleccionar
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <h4 class="mb-3">Información del Caso</h4>
+                                <div class="mb-3">
+                                    <label for="descripcion" class="form-label">Descripción Detallada <span class="text-danger">*</span></label>
+                                    <textarea class="form-control" id="descripcion" name="descripcion" rows="4" placeholder="Describe la situación con todos los detalles que puedas proporcionar..." required></textarea>
+                                    <div class="form-text">Proporciona la mayor cantidad de detalles posible: personas involucradas, ubicación exacta, horarios, etc.</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="fecha" class="form-label">Fecha del Incidente</label>
+                                        <input type="date" class="form-control" id="fecha" name="fecha">
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="ubicacion" class="form-label">Ubicación Aproximada</label>
+                                        <input type="text" class="form-control" id="ubicacion" name="ubicacion" placeholder="Dirección, barrio, referencia...">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <h4 class="mb-3">Confidencialidad</h4>
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" type="checkbox" id="anonimo" name="anonimo" value="Sí" checked>
+                                    <label class="form-check-label" for="anonimo">
+                                        Deseo realizar esta denuncia de forma anónima
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="contacto" name="contacto" value="Sí">
+                                    <label class="form-check-label" for="contacto">
+                                        Autorizo ser contactado para seguimiento del caso (opcional)
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <div class="alert alert-info">
+                                <i class="bi bi-info-circle me-2"></i>
+                                <strong>Importante:</strong> Tu denuncia será procesada de forma segura y confidencial. Recibirás una confirmación en menos de 10 minutos.
+                            </div>
+                            
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-denuncia btn-lg pulse-animation">
+                                    <i class="bi bi-send-fill me-2"></i>Enviar Denuncia
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- Columna de asides -->
+                <div class="col-lg-4">
+                    <!-- Aside 1: Señales de alerta -->
+                    <aside class="aside-section alert-aside">
+                        <h3 class="aside-title"><i class="bi bi-exclamation-triangle me-2"></i>Señales de Alerta</h3>
+                        <div class="aside-content">
+                            <img src="https://images.unsplash.com/photo-1583324113626-70df0f4deaab?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
+                                 alt="Señales de trata" class="round-image">
+                            <p><strong>Identifica posibles casos:</strong></p>
+                            <ul class="list-unstyled text-start">
+                                <li><i class="bi bi-check-circle text-success me-2"></i>Personas con miedo o controladas</li>
+                                <li><i class="bi bi-check-circle text-success me-2"></i>Documentos de identidad retenidos</li>
+                                <li><i class="bi bi-check-circle text-success me-2"></i>Condiciones de trabajo inhumanas</li>
+                                <li><i class="bi bi-check-circle text-success me-2"></i>Sin libertad de movimiento</li>
+                                <li><i class="bi bi-check-circle text-success me-2"></i>Falta de atención médica</li>
+                            </ul>
+                        </div>
+                    </aside>
+                    
+                    <!-- Aside 2: Tu denuncia importa -->
+                    <aside class="aside-section info-aside">
+                        <h3 class="aside-title"><i class="bi bi-shield-check me-2"></i>Tu Denuncia es Segura</h3>
+                        <div class="aside-content">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                                 alt="Denuncia segura" class="round-image">
+                            <p>Utilizamos tecnología de encriptación avanzada para proteger tu identidad y la información que compartes.</p>
+                            <div class="aside-stats">
+                                <div class="stat-item">
+                                    <div class="stat-number">100%</div>
+                                    <div class="stat-label">Anónimo</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">10min</div>
+                                    <div class="stat-label">Respuesta</div>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                    
+                    <!-- Aside 3: Impacto de tu denuncia -->
+                    <aside class="aside-section success-aside">
+                        <h3 class="aside-title"><i class="bi bi-graph-up me-2"></i>Impacto de Tu Denuncia</h3>
+                        <div class="aside-content">
+                            <img src="https://images.unsplash.com/photo-1593115057322-e94b77572f20?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                                 alt="Impacto de denuncias" class="round-image">
+                            <p>"Gracias a denuncias anónimas, hemos rescatado a más de 800 personas de situaciones de explotación."</p>
+                            <p class="text-end mt-2 mb-0"><em>- Equipo de Respuesta Rápida</em></p>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="chat" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="text-center mb-5 fw-bold">Chat de Asistencia Inmediata</h2>
+                    <div class="card">
+                        <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+                            <h5 class="mb-0"><i class="bi bi-chat-dots me-2"></i>Asistente Virtual - Centro de Denuncias</h5>
+                            <span class="badge bg-success">En línea</span>
+                        </div>
+                        <div class="chat-container" id="chatMessages">
+                            <!-- Mensajes del chat se cargarán aquí -->
+                        </div>
+                        <div class="chat-input-container">
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="chatInput" placeholder="Escribe tu mensaje aquí..." aria-label="Mensaje de chat">
+                                <button class="btn btn-primary" type="button" id="sendMessage">
+                                    <i class="bi bi-send-fill"></i>
+                                </button>
+                            </div>
+                            <div class="typing-indicator" id="typingIndicator">
+                                <div class="typing-dots">
+                                    <div class="typing-dot"></div>
+                                    <div class="typing-dot"></div>
+                                    <div class="typing-dot"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="alert alert-info mb-0 text-center">
+                                <i class="bi bi-info-circle me-2"></i>
+                                Chat en tiempo real. Tu conversación es confidencial y segura.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <h2 class="text-center mb-5 fw-bold">Preguntas Frecuentes</h2>
+                    <div class="accordion faq-accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    ¿Es realmente anónima mi denuncia?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Sí, tu denuncia es 100% anónima. No requerimos datos personales y utilizamos tecnología de encriptación para proteger tu identidad. Solo si autorizas el contacto para seguimiento solicitaremos información de contacto.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    ¿Qué sucede después de realizar una denuncia?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Nuestro equipo especializado evalúa inmediatamente cada denuncia. Si es viable, activamos los protocolos correspondientes con las autoridades. En casos de emergencia, la respuesta puede ser en menos de 30 minutos.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    ¿Puedo denunciar si no tengo todos los detalles?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Sí, cualquier información, por mínima que sea, puede ser crucial. No necesitas tener todos los detalles. Nuestro equipo puede trabajar con la información que proporciones para investigar y tomar acción.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="recursos" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="fw-bold">Recursos de Ayuda</h2>
+                    <p class="lead">Material educativo y herramientas para identificar y prevenir la trata de personas</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-file-earmark-pdf display-4 text-danger mb-3"></i>
+                            <h5 class="card-title">Guía de Señales</h5>
+                            <p class="card-text">Aprende a identificar las señales de trata y tráfico de personas.</p>
+                            <a href="#" class="btn btn-outline-primary">Descargar PDF</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-phone display-4 text-primary mb-3"></i>
+                            <h5 class="card-title">App Móvil</h5>
+                            <p class="card-text">Descarga nuestra aplicación para denuncias rápidas y seguras.</p>
+                            <a href="#" class="btn btn-outline-primary">Descargar App</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-megaphone display-4 text-warning mb-3"></i>
+                            <h5 class="card-title">Campañas</h5>
+                            <p class="card-text">Conoce nuestras campañas de concientización y prevención.</p>
+                            <a href="#" class="btn btn-outline-primary">Ver Campañas</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contacto">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5><i class="bi bi-shield-exclamation me-2"></i>ALERTA - Centro de Denuncias</h5>
+                    <p>Luchando contra la trata y tráfico de personas en Bolivia y el mundo.</p>
+                    <div class="footer-social-links">
+                        <a href="https://www.facebook.com/mingobol" target="_blank" class="footer-social-link facebook" title="Ministerio de Gobierno Bolivia">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="https://wa.me/59172020707?text=Hola,%20necesito%20reportar%20un%20caso%20de%20trata%20de%20personas" target="_blank" class="footer-social-link whatsapp" title="Línea de Denuncias Policiales">
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
+                        <a href="https://www.instagram.com/unodc_bolivia/" target="_blank" class="footer-social-link instagram" title="UNODC Bolivia">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="https://www.youtube.com/results?search_query=trata+de+personas+bolivia" target="_blank" class="footer-social-link youtube" title="Contenido sobre Trata de Personas">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                        <a href="https://maps.google.com/?q=Defensoría+del+Pueblo+La+Paz+Bolivia" target="_blank" class="footer-social-link maps" title="Ubicación Defensoría del Pueblo">
+                            <i class="bi bi-geo-alt-fill"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="contact-link">Página Principal</a></li>
+                        <li><a href="#formulario" class="contact-link">Formulario de Denuncia</a></li>
+                        <li><a href="#recursos" class="contact-link">Recursos de Ayuda</a></li>
+                        <li><a href="#" class="contact-link">Legislación</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Contacto de Emergencia</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="tel:8001234" class="contact-link"><i class="bi bi-telephone me-2"></i>800-1234</a></li>
+                        <li><a href="https://wa.me/591789253782" target="_blank" class="contact-link"><i class="bi bi-whatsapp me-2"></i>+591 789-ALERTA</a></li>
+                        <li><a href="mailto:denuncias@alerta.org.bo" class="contact-link"><i class="bi bi-envelope me-2"></i>denuncias@alerta.org.bo</a></li>
+                        <li><i class="bi bi-geo-alt me-2"></i>La Paz, Bolivia</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2024 ALERTA - Centro de Denuncias. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="contact-link me-3">Política de Privacidad</a>
+                    <a href="#" class="contact-link">Términos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Contador de visitas -->
+    <div class="visitor-counter">
+        <div class="counter-container">
+            <i class="bi bi-eye-fill"></i>
+            <span class="counter-number" id="visitCount">0</span>
+            <span class="counter-label">Visitas</span>
+        </div>
+    </div>
+
+    <div class="floating-help">
+        <a href="#formulario" class="floating-help-btn pulse-animation">
+            <i class="bi bi-question-lg"></i>
+        </a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Contador de visitas
+        function initializeVisitorCounter() {
+            let visitCount = localStorage.getItem('pageVisits');
+            
+            if (!visitCount) {
+                visitCount = 1;
+            } else {
+                visitCount = parseInt(visitCount) + 1;
+            }
+            
+            localStorage.setItem('pageVisits', visitCount);
+            
+            const counterElement = document.getElementById('visitCount');
+            if (counterElement) {
+                animateCounter(counterElement, visitCount);
+            }
+        }
+
+        function animateCounter(element, target) {
+            let current = 0;
+            const increment = target / 50;
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    current = target;
+                    clearInterval(timer);
+                }
+                element.textContent = Math.floor(current).toLocaleString();
+            }, 30);
+        }
+
+        // Chat funcional
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeVisitorCounter();
+            
+            const chatMessages = document.getElementById('chatMessages');
+            const chatInput = document.getElementById('chatInput');
+            const sendButton = document.getElementById('sendMessage');
+            const typingIndicator = document.getElementById('typingIndicator');
+            
+            // Mensaje inicial del bot
+            addMessage('Hola, soy tu asistente virtual del Centro de Denuncias. Estoy aquí para ayudarte a realizar una denuncia de forma segura y confidencial. ¿En qué puedo asistirte?', 'bot');
+            
+            // Respuestas predefinidas del bot
+            const botResponses = {
+                'hola': 'Hola, ¿en qué puedo ayudarte hoy?',
+                'denuncia': 'Para realizar una denuncia, puedes usar nuestro formulario seguro o contactarnos directamente por WhatsApp. ¿Qué tipo de situación deseas reportar?',
+                'explotación laboral': 'Entiendo. La explotación laboral es un delito grave. Te recomiendo proporcionar todos los detalles posibles: ubicación, número de personas afectadas, condiciones observadas. ¿Puedes contarme más?',
+                'explotación sexual': 'Comprendo la gravedad. Para casos de explotación sexual, es crucial actuar rápido. ¿Puedes proporcionar la ubicación exacta y cualquier detalle sobre las personas involucradas?',
+                'tráfico de personas': 'El tráfico de personas requiere acción inmediata. ¿Tienes información sobre rutas, vehículos o lugares específicos? Cada detalle es importante.',
+                'gracias': 'De nada. Recuerda que tu valentía puede salvar vidas. No dudes en contactarnos si necesitas más ayuda.',
+                'adiós': 'Gracias por contactarnos. Tu seguridad es importante. Si necesitas ayuda adicional, estamos disponibles 24/7.'
+            };
+            
+            // Función para agregar mensajes al chat
+            function addMessage(text, sender) {
+                const messageDiv = document.createElement('div');
+                messageDiv.className = `chat-message ${sender}`;
+                
+                const bubbleDiv = document.createElement('div');
+                bubbleDiv.className = 'message-bubble';
+                bubbleDiv.textContent = text;
+                
+                const timeDiv = document.createElement('div');
+                timeDiv.className = 'message-time';
+                timeDiv.textContent = new Date().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
+                
+                messageDiv.appendChild(bubbleDiv);
+                messageDiv.appendChild(timeDiv);
+                chatMessages.appendChild(messageDiv);
+                
+                // Scroll al último mensaje
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+            }
+            
+            // Función para simular que el bot está escribiendo
+            function showTypingIndicator() {
+                typingIndicator.style.display = 'block';
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+            }
+            
+            function hideTypingIndicator() {
+                typingIndicator.style.display = 'none';
+            }
+            
+            // Función para obtener respuesta del bot
+            function getBotResponse(userMessage) {
+                const lowerMessage = userMessage.toLowerCase();
+                
+                // Buscar coincidencias en las respuestas predefinidas
+                for (const [key, response] of Object.entries(botResponses)) {
+                    if (lowerMessage.includes(key)) {
+                        return response;
+                    }
+                }
+                
+                // Respuesta por defecto
+                return 'Entiendo. Para ayudarte mejor, te recomiendo contactarnos directamente por WhatsApp al +591 789-ALERTA o usar nuestro formulario seguro de denuncias. ¿Hay algo específico en lo que pueda asistirte?';
+            }
+            
+            // Enviar mensaje al hacer clic en el botón
+            sendButton.addEventListener('click', function() {
+                const message = chatInput.value.trim();
+                if (message) {
+                    addMessage(message, 'user');
+                    chatInput.value = '';
+                    
+                    // Simular respuesta del bot después de un breve retraso
+                    showTypingIndicator();
+                    setTimeout(() => {
+                        hideTypingIndicator();
+                        const botResponse = getBotResponse(message);
+                        addMessage(botResponse, 'bot');
+                    }, 1500);
+                }
+            });
+            
+            // Enviar mensaje al presionar Enter
+            chatInput.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    sendButton.click();
+                }
+            });
+            
+            // Efecto interactivo para el contador
+            const counterContainer = document.querySelector('.counter-container');
+            if (counterContainer) {
+                counterContainer.addEventListener('click', function() {
+                    this.style.transform = 'scale(0.95)';
+                    setTimeout(() => {
+                        this.style.transform = '';
+                    }, 150);
+                    
+                    const originalContent = this.innerHTML;
+                    this.innerHTML = '<span style="color: #4ecdc4;">¡Gracias por visitar!</span>';
+                    
+                    setTimeout(() => {
+                        this.innerHTML = originalContent;
+                    }, 2000);
+                });
+            }
+        });
+    </script>
+</body>
+</html>
